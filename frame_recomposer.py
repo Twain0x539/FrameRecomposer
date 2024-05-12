@@ -76,6 +76,7 @@ def merge(input_folder: str, output_file: str, fps: int = 30, force: bool = Fals
         H_cur, W_cur = frame.shape[:2]
         if H_cur != H or W_cur != W:
             print("Warning! Image of different shape! Skipping...")
+            continue
         else:
             out.write(frame)
 
