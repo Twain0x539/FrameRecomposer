@@ -8,7 +8,7 @@ Using this module you can:
 ### 0. Requirements
 This module was developed using Python 3.9, but must work on lower versions
 
-### Clone repository and install pip requirements:
+### 1. Clone repository and install pip requirements:
 ```
 git clone https://github.com/Twain0x539/FrameRecomposer.git
 pip install -r requirements.txt
