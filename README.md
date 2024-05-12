@@ -13,7 +13,7 @@ This module was developed using Python 3.9, but must work on lower versions
 git clone https://github.com/Twain0x539/FrameRecomposer.git
 pip install -r requirements.txt
 ```
-## Using
+## Usage
 ### Extraction
 ```
 python main.py <input_video> <output_folder> --extract
