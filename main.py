@@ -1,5 +1,5 @@
 import argparse
-from frame_recomposer import FrameRecomposer
+from frame_recomposer import *
 
 
 if __name__ == '__main__':
@@ -18,11 +18,7 @@ if __name__ == '__main__':
         print("One of --merge or --extract should be passed!")
 
 
-
-    frame_recomposer = FrameRecomposer()
-
     if args.merge:
-        frame_recomposer.merge(args.input, args.output)
+        merge(args.input, args.output, force=args.force, quiet=args.quiet)
     else:
-        frame_recomposer.extract(input_file=args.input, output_folder=args.output,
-                                 force=args.force, quiet=args.quiet)
+        extract(input_file=args.input, output_folder=args.output, force=args.force, quiet=args.quiet)
